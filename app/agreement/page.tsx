@@ -60,8 +60,8 @@ function Agreement() {
                         timer: 1000
                     }).then(() => {
                      
-                        // router.replace("https://dry-paws-film.loca.lt/profile2/" + Patient?.cid + "/" + updateline.lineid)
                         router.replace("https://hyggeoa.hyggecode.com/profile2/" + Patient?.cid + "/" + lineID)
+                        // router.replace("https://a114-122-154-73-45.ngrok-free.app/profile2/" + Patient?.cid + "/" + lineID)
                         // router.replace('/profile')
                     });
 
@@ -79,6 +79,8 @@ function Agreement() {
                 // });
             
                 router.replace("https://hyggeoa.hyggecode.com/profile2/" + Patient?.cid + "/" + lineID)
+                // router.replace("https://a114-122-154-73-45.ngrok-free.app/profile2/" + Patient?.cid + "/" + lineID)
+
             }
         }
     };

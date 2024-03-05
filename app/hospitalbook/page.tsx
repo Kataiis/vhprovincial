@@ -81,6 +81,8 @@ const Hospitalbook = () => {
                         })
                             .then(async () => {
                                 router.replace("https://hyggeoa.hyggecode.com/profile2/" + Patient?.cid + "/" + lineid)
+                                // router.replace("https://a114-122-154-73-45.ngrok-free.app/profile2/" + Patient?.cid + "/" + lineID)
+
                             });
                     }, 30000);
                     return () => clearTimeout(timer);
@@ -94,6 +96,8 @@ const Hospitalbook = () => {
                         timer: 2000
                     });
                     router.replace("https://hyggeoa.hyggecode.com/profile2/" + Patient?.cid + "/" + lineid)
+                    // router.replace("https://a114-122-154-73-45.ngrok-free.app/profile2/" + Patient?.cid + "/" + lineID)
+
 
                 }
             }
