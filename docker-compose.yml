@@ -2,7 +2,7 @@ version: '3.9'
 
 networks:
   web_network:
-    name: hyggeoa
+    name: vhprovincial
     driver: bridge
 
 services:
@@ -10,7 +10,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: hyggeoaapp
+    container_name: vhprovincial
     restart: always
     ports:
       - 8088:8088
