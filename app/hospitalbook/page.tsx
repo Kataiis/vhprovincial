@@ -118,9 +118,10 @@ const Hospitalbook = () => {
                 const dataSend = { lineid: `${profile.userId}` }
 
                 console.log("dataSend", dataSend)
-
-                const checkLineId = await axios.post(`${pathUrl}/health/hyggelineservice/checkLineid`, dataSend)
                 
+                const checkLineId = await axios.post(`${pathUrl}/health/hyggelineservice/checkLineid`, dataSend)
+
+                // 1. เช็ค lineid ที่ hygge_line_service
                 if (checkLineId.data.ok) {
                     if (checkLineId.data.message.length > 0) {
                         const value = checkLineId.data.message[0].cid;
@@ -148,8 +149,6 @@ const Hospitalbook = () => {
                         router.replace("/login");
                     }
                 } else { throw new Error(checkLineId.data.error); }
-
-
 
                 console.info(checkLineId.data);
                 console.log("checkLineId", checkLineId.data)
