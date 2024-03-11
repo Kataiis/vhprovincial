@@ -74,8 +74,7 @@ const Login = () => {
 
         console.log("dataIns", dataIns)
 
-        // const resIns: any = await axios.post(pathUrl + "/health/hiereq/store_hyggeoa", dataIns);
-        const resIns: any = await axios.post(pathUrl + "/health/hiereq/store_hyggeoa", DataTransferItemList);
+        const resIns: any = await axios.post(pathUrl + "/health/hiereq/store_hyggeoa", dataIns);
         console.log("resIns", resIns.data)
 
         if (resIns.data.ok) {
@@ -99,24 +98,6 @@ const Login = () => {
                     throw new Error(service.data.error);
                 }
 
-
-                // const check = await axios.post(`${pathUrl}/health/hyggelineservice/checkLineid`, { lineid: lineid })
-                // console.log("check", check.data)
-                // if (check.data.ok) {
-
-                //     const service = await axios.post(`${pathUrl}/health/hyggelineservice`, dataservice)
-                //     console.log("service", service.data)
-
-                //     if (service.data.ok) {
-                //         console.log(service.data.message)
-                //         router.replace("/agreement")
-                //     } else {
-                //         throw new Error(service.data.error);
-                //     }
-
-                // } else {
-                //     throw new Error(check.data.error);
-                // }
 
             } else { throw new Error(log.data.error) }
 
