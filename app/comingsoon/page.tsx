@@ -21,7 +21,7 @@ function Coming() {
             <div className="absolute left-8 top-6 h-16 w-16 z-0 ">
                 <Image
                     priority
-                    src={back}
+                    src="/vhprovincial/back.png"
                     alt="back"
                     height={25}
                     onClick={backPage}
@@ -32,7 +32,7 @@ function Coming() {
                 <div className='ml-16 basis-1/5'>
                     <Image
                         priority
-                        src={logo}
+                        src="/vhprovincial/hg.png"
 
                         alt="logo"
                         width={55}
@@ -45,7 +45,7 @@ function Coming() {
             <div className="flex flex-row justify-center items-center w-full mt-20">
                 <Image
                     priority
-                    src={commingsoon}
+                    src="/vhprovincial/workin.png"
                     alt="commingsoon"
                     height={200}
 

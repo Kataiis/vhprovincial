@@ -57,7 +57,7 @@ const Hospitalbook = () => {
                 if (res.data.message <= 1) {
                     Swal.fire({
                         html:
-                            '<div><img src="/health-report.gif" />' +
+                            '<div><img src="/vhprovincial/health-report.gif" />' +
                             '<p style="font-size: 16px; margin-top: 10px">กำลังดึงข้อมูลจากโรงพยาบาล</p>' +
                             '<p style="font-size: 18px; margin-top: 10px">กรุณารอประมาณ 30 วินาที</p>' +
                             '</div>',
@@ -227,7 +227,7 @@ const Hospitalbook = () => {
                     <div className="animate-pulse flex space-x-4  justify-center items-center">
                         <Image
                             priority
-                            src={loadingpage}
+                            src="/vhprovincial/loading.png"
 
                             alt="loading"
                             width={100}

@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: false,
+    trailingSlash: true,
+    output: 'export',
+    basePath: '/vhprovincial',
     images: {
         domains: ['profile.line-scdn.net'],
+        unoptimized: true,
     },
     env: {
         pathUrl: `https://hyggemedicalservice.com/phpapi/api`,

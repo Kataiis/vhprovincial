@@ -36,7 +36,7 @@ function Agreement() {
 
                 Swal.fire({
                     html:
-                        '<div><img src="/health-report.gif" />' +
+                        '<div><img src="/vhprovincial/health-report.gif" />' +
                         '<p style="font-size: 16px; margin-top: 10px">กำลังดึงข้อมูลจากโรงพยาบาล</p>' +
                         '<p style="font-size: 18px; margin-top: 10px">กรุณารอประมาณ 30 วินาที</p>' +
                         '</div>',
@@ -121,7 +121,7 @@ function Agreement() {
             <div className='flex justify-center mt-12'>
                 <Image
                     priority
-                    src={digital}
+                    src="/vhprovincial/digital.png"
                     alt="digital"
                     width={100}
                     height={100}

@@ -24,6 +24,7 @@ import { usePatientStore } from "../store";
 import dayjs from "dayjs";
 
 import logo from '@/public/hyggelogo.png'
+import Link from "next/link";
 
 
 const Login = () => {
@@ -219,9 +220,10 @@ const Login = () => {
             <span style={{ fontSize: "9em", marginRight: "10px" }}>
                 <Image
                     priority
-                    src={logo}
+                    src="/vhprovincial/hyggelogo.png"
                     alt="logo"
                     width={65}
+                    height={65}
                 />
             </span>
             <p className="mt-5 text-center text-3xl text-white	">หน่วยบริการสุขภาพ</p>
@@ -305,12 +307,11 @@ const Login = () => {
                         variant="outline"
                         className="bg-[#53AE85] text-grey drop-shadow-md text-md hover:bg-[#eaefe8] hover:text-grey hover:text-lg text-[#ffffff] h-[45px] w-[250px]"
                         disabled={isDisble}
-                        onClick={() => router.replace('/comingsoon')}
-
-
+                        onClick={() => router.push('https://imauth.bora.dopa.go.th/api/v2/oauth2/auth/?response_type=code&client_id=TTNUQnVRZmJTcmtOYTdxRmZvMjZUaXVjNjF1T05BN0k&redirect_uri=https://hyggecode.com/hyggeforgetpassword/index.html&scope=pid%20given_name%20title%20family_name%20name%20gender&state=12345')}
                     >
                         ลืม password
                     </Button>
+
                 </div>
             </Card>
             <div className="mt-10">
