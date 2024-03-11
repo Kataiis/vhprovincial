@@ -98,24 +98,6 @@ const Login = () => {
                 }
 
 
-                // const check = await axios.post(`${pathUrl}/health/hyggelineservice/checkLineid`, { lineid: lineid })
-                // console.log("check", check.data)
-                // if (check.data.ok) {
-
-                //     const service = await axios.post(`${pathUrl}/health/hyggelineservice`, dataservice)
-                //     console.log("service", service.data)
-
-                //     if (service.data.ok) {
-                //         console.log(service.data.message)
-                //         router.replace("/agreement")
-                //     } else {
-                //         throw new Error(service.data.error);
-                //     }
-
-                // } else {
-                //     throw new Error(check.data.error);
-                // }
-
             } else { throw new Error(log.data.error) }
 
 
