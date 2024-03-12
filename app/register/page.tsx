@@ -65,7 +65,7 @@ function Register() {
                     src="/vhprovincial/footer.png"
                     alt="footer"
                     // width={140}
-                    height={160}
+                    height={140}
 
                 />
 
