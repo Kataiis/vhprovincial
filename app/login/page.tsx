@@ -38,7 +38,7 @@ const Login = () => {
     const router = useRouter();
     const updatePatient: any = usePatientStore((state: any) => state.updatePatient);
     const updateline: any = uselineStore((state: any) => state.updateline);
-    const lineid: any = uselineStore((state: any) => state.updateline);
+    // const lineid: any = uselineStore((state: any) => state.updateline);
 
 
     const LoginFormSchema = z.object({
@@ -282,6 +282,8 @@ const Login = () => {
                     </FormProvider>
 
                 </CardContent>
+
+                {/* ลืม password */}
                 <div className="flex justify-center mb-5">
                     <Button
                         type="submit"
@@ -294,6 +296,7 @@ const Login = () => {
                     </Button>
 
                 </div>
+
             </Card>
             <div className="mt-10">
                 <Button
